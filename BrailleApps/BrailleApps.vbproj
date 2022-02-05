@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE0306A0-AA88-45BE-88E0-C44FE4EBF65B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BrailleApps.My.MyApplication</StartupObject>
+    <RootNamespace>BrailleApps</RootNamespace>
+    <AssemblyName>BrailleApps</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BrailleApps.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BrailleApps.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>tkjadb.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Form1.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="File.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>File.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\SplashScreen1.vb" />
+    <Compile Include="My Project\SplashScreen11.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="File.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>File.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\W.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Y.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Z.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13 - Hey Jude.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="Resources\21_The Beatles_Hey Jude.mp3" />
+    <None Include="Resources\Hey.wav" />
+    <None Include="Resources\tkjadbbackground.png" />
+    <None Include="Resources\tkjadb.png" />
+    <None Include="Resources\ProfileBackground.png" />
+    <None Include="Resources\ini.png" />
+    <None Include="Resources\Profile.bmp" />
+    <None Include="Resources\RvsCG.gif.gif" />
+    <None Include="Resources\63_big.jpg" />
+    <None Include="Resources\Windows Navigation Start.wav" />
+    <None Include="Resources\Foto %28433%29 Agung Firmansyah.JPG" />
+    <None Include="Resources\Foto %28436%29 Alfin Ananda.JPG" />
+    <None Include="Resources\Foto %28449%29 Iqbal Nurfaozi.JPG" />
+    <None Include="Resources\Foto %28455%29 M. Rifani.JPG" />
+    <None Include="Resources\Graviti Braille Apps.png" />
+    <None Include="Resources\21_The Beatles_Hey Jude.wav" />
+    <Content Include="tkjadb.ico" />
+    <Content Include="tkjadb~1.ico" />
+    <None Include="Resources\ADB.png" />
+    <None Include="Resources\smk-bisa-copy.png" />
+    <None Include="Resources\ADB2.png" />
+    <None Include="Resources\Keren.png" />
+    <None Include="Resources\braille apps logo.png" />
+    <None Include="Resources\vb.png" />
+    <None Include="Resources\Technology-HD-Backgrounds.jpg" />
+    <None Include="Resources\ADB1.png" />
+    <None Include="Resources\Graviti 2 Braille Apps.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\angka_10.wav" />
+    <None Include="Resources\angka_9.wav" />
+    <None Include="Resources\angka_8.wav" />
+    <None Include="Resources\angka_7.wav" />
+    <None Include="Resources\angka_6.wav" />
+    <None Include="Resources\angka_5.wav" />
+    <None Include="Resources\angka_4.wav" />
+    <None Include="Resources\angka_3.wav" />
+    <None Include="Resources\angka_2.wav" />
+    <None Include="Resources\angka_1.wav" />
+    <None Include="Resources\angka_0.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
